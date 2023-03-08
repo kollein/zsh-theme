@@ -24,25 +24,24 @@
      to see how it should look like or see [this issue](
        https://github.com/romkatv/powerlevel10k/issues/671) for extra information.
 
-### Homebrew:
+### Manual:
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-### Theme: powerlevel10k
-```
-brew install romkatv/powerlevel10k/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 ```
 
 ### Theme Configuration
 
 - Create config file:
 ```
-echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
-- Configure:
+- Apply change:
 ```
 source ~/.zshrc
+```
+- Theme config:
+```
+p10k configure
 ```
 
 ### ZSH Plugins
